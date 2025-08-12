@@ -36,7 +36,7 @@ def input_json_with_help(prompt):
     while True:
         raw = input(Fore.BLUE + prompt + " (JSON, empty = {} | ? for help): " + Style.RESET_ALL).strip()
         if raw == "?":
-            # Choose which help topic depending on prompt text
+            
             if "Header" in prompt:
                 print_help("header")
             else:
